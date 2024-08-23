@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning and Evening Azkar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Azkar App</h1>
+    <div class="selection">
+        <button id="morning-btn">Morning Azkar</button>
+        <button id="evening-btn">Evening Azkar</button>
+    </div>
+
+    <div id="azkar-container">
+        <!-- Morning Azkar -->
+        <div id="morning-azkar" class="azkar-list">
+            <h2>Morning Azkar</h2>
+
+            <!-- Azkar 1 -->
+            <div class="azkar-item">
+                <p>Subhanallah (Hausa: Tsarki ya tabbata ga Allah)</p>
+                <p>Arabic: سبحان الله</p>
+                <p>English: Glory be to Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 2 -->
+            <div class="azkar-item">
+                <p>Alhamdulillah (Hausa: Godiya ta tabbata ga Allah)</p>
+                <p>Arabic: الحمد لله</p>
+                <p>English: Praise be to Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 3 -->
+            <div class="azkar-item">
+                <p>Allahu Akbar (Hausa: Allah ya fi kowa girma)</p>
+                <p>Arabic: الله أكبر</p>
+                <p>English: Allah is the Greatest</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 4 -->
+            <div class="azkar-item">
+                <p>La ilaha illallah (Hausa: Babu wani abin bautawa da ya cancanta sai Allah)</p>
+                <p>Arabic: لا إله إلا الله</p>
+                <p>English: There is no deity but Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 5 -->
+            <div class="azkar-item">
+                <p>Astaghfirullah (Hausa: Ina neman gafarar Allah)</p>
+                <p>Arabic: أستغفر الله</p>
+                <p>English: I seek forgiveness from Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 6 -->
+            <div class="azkar-item">
+                <p>La hawla wa la quwwata illa billah (Hausa: Babu ƙarfin aikata alheri sai tare da Allah)</p>
+                <p>Arabic: لا حول ولا قوة إلا بالله</p>
+                <p>English: There is no power or might except with Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 7 -->
+            <div class="azkar-item">
+                <p>Bismillah (Hausa: Da sunan Allah)</p>
+                <p>Arabic: بسم الله</p>
+                <p>English: In the name of Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 8 -->
+            <div class="azkar-item">
+                <p>Subhanallah wa bihamdihi (Hausa: Tsarki ya tabbata ga Allah da godiyarsa)</p>
+                <p>Arabic: سبحان الله وبحمده</p>
+                <p>English: Glory be to Allah and praise be to Him</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 9 -->
+            <div class="azkar-item">
+                <p>Rabbi ghfirli (Hausa: Ya Ubangiji, ka gafarta mini)</p>
+                <p>Arabic: ربي اغفر لي</p>
+                <p>English: My Lord, forgive me</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 10 -->
+            <div class="azkar-item">
+                <p>Rabbi zidni ilma (Hausa: Ya Ubangiji, ka ƙara mini ilimi)</p>
+                <p>Arabic: ربي زدني علما
+                  <p>English: My Lord, increase me in knowledge</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 11 -->
+            <div class="azkar-item">
+                <p>Hasbiyallahu la ilaha illa huwa (Hausa: Allah ya isar mini, babu abin bautawa sai shi)</p>
+                <p>Arabic: حسبي الله لا إله إلا هو</p>
+                <p>English: Allah is sufficient for me; there is no deity except Him</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 12 -->
+            <div class="azkar-item">
+                <p>Subhanallah wa bihamdihi, Subhanallahil Azeem (Hausa: Tsarki ya tabbata ga Allah, mai girma da godiyarsa)</p>
+                <p>Arabic: سبحان الله وبحمده، سبحان الله العظيم</p>
+                <p>English: Glory be to Allah and praise be to Him, Glory be to Allah the Great</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+        </div>
+
+        <!-- Evening Azkar -->
+        <div id="evening-azkar" class="azkar-list" style="display: none;">
+            <h2>Evening Azkar</h2>
+
+            <!-- Azkar 1 -->
+            <div class="azkar-item">
+                <p>Astaghfirullah (Hausa: Ina neman gafarar Allah)</p>
+                <p>Arabic: أستغفر الله</p>
+                <p>English: I seek forgiveness from Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 2 -->
+            <div class="azkar-item">
+                <p>Alhamdulillah (Hausa: Godiya ta tabbata ga Allah)</p>
+                <p>Arabic: الحمد لله</p>
+                <p>English: Praise be to Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 3 -->
+            <div class="azkar-item">
+                <p>Allahu Akbar (Hausa: Allah ya fi kowa girma)</p>
+                <p>Arabic: الله أكبر</p>
+                <p>English: Allah is the Greatest</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 4 -->
+            <div class="azkar-item">
+                <p>La ilaha illallah (Hausa: Babu wani abin bautawa da ya cancanta sai Allah)</p>
+                <p>Arabic: لا إله إلا الله</p>
+                <p>English: There is no deity but Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 5 -->
+            <div class="azkar-item">
+                <p>Subhanallah (Hausa: Tsarki ya tabbata ga Allah)</p>
+                <p>Arabic: سبحان الله</p>
+                <p>English: Glory be to Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 6 -->
+            <div class="azkar-item">
+                <p>La hawla wa la quwwata illa billah (Hausa: Babu ƙarfin aikata alheri sai tare da Allah)</p>
+                <p>Arabic: لا حول ولا قوة إلا بالله</p>
+                <p>English: There is no power or might except with Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 7 -->
+            <div class="azkar-item">
+                <p>Bismillah (Hausa: Da sunan Allah)</p>
+                <p>Arabic: بسم الله</p>
+                <p>English: In the name of Allah</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 8 -->
+            <div class="azkar-item">
+                <p>Subhanallah wa bihamdihi (Hausa: Tsarki ya tabbata ga Allah da godiyarsa)</p>
+                <p>Arabic: سبحان الله وبحمده</p>
+                <p>English: Glory be to Allah and praise be to Him</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 9 -->
+            <div class="azkar-item">
+                <p>Hasbiyallahu la ilaha illa huwa (Hausa: Allah ya isar mini, babu abin bautawa sai shi)</p>
+                <p>Arabic: حسبي الله لا إله إلا هو</p>
+                <p>English: Allah is sufficient for me; there is no deity except Him</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+
+            <!-- Azkar 10 -->
+            <div class="azkar-item">
+                <p>Subhanallah wa bihamdihi, Subhanallahil Azeem (Hausa: Tsarki ya tabbata ga Allah, mai girma da godiyarsa)</p>
+                <p>Arabic: سبحان الله وبحمده، سبحان الله العظيم</p>
+                <p>English: Glory be to Allah and praise be to Him, Glory be to Allah the Great</p>
+                <button class="counter" data-count="0">0</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
