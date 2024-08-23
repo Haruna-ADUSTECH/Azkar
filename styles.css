@@ -1,32 +1,32 @@
 /* General Styling */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #f2f4f8, #d3e0ea);
+    background: linear-gradient(to bottom, #f2f4f8, #d3e0ea);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 80%;
-    max-width: 900px;
+    width: 95%;
+    max-width: 400px;
 }
 
 h1 {
     background: linear-gradient(135deg, #42a5f5, #478ed1);
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     margin: 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.8em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     animation: gradient 5s ease infinite;
 }
 
@@ -37,25 +37,25 @@ h1 {
 }
 
 .azkar-list {
-    padding: 20px;
+    padding: 10px 15px;
 }
 
 .azkar-item {
     background-color: #f9f9f9;
     border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
     transition: box-shadow 0.3s ease;
 }
 
 .azkar-item:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .azkar-item p {
     margin: 5px 0;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #333;
 }
 
@@ -70,8 +70,8 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 1em;
+    padding: 8px 12px;
+    font-size: 0.9em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -81,7 +81,7 @@ button:hover {
 }
 
 .counter {
-    width: 50px;
+    width: 40px;
     text-align: center;
     background-color: #1e88e5;
 }
@@ -97,13 +97,13 @@ button:hover {
 /* Toggle Buttons */
 #buttons {
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .toggle-btn {
     background-color: #66bb6a;
-    padding: 15px 30px;
-    margin: 0 10px;
+    padding: 10px 20px;
+    margin: 5px 0;
 }
 
 .toggle-btn:hover {
@@ -111,15 +111,17 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 400px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     .container {
-        width: 95%;
+        width: 100%;
     }
     .toggle-btn {
-        padding: 10px 20px;
-        margin: 5px 0;
+        padding: 8px 15px;
+    }
+    .azkar-item p {
+        font-size: 0.9em;
     }
 }
